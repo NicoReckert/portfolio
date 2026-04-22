@@ -27,6 +27,13 @@ body {
     max-width: 1440px;
 }
 
+.content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -67,7 +74,7 @@ h2 {
 
 .portrait-title-box {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -110,6 +117,61 @@ h2 {
 .title3 {
     color: #9747FF;
     font-size: 58px;
+    font-family: 'Poppins-Regular';
+    font-weight: 400;
+
+}
+
+.icon-box {
+    margin: 24px 0;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 32px;
+}
+
+.line {
+    height: 1px;
+    width: 100px;
+    background-color: #9747FF;
+}
+
+.mail {
+    color: white;
+    font-family: 'Poppins-Regular';
+    font-weight: 400;
+    font-size: 23px;
+
+}
+
+.about-me-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.about-me-sub-box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    padding-left: 100px;
+}
+
+.about-me__title {
+    color: white;
+    font-size: 90px;
+    font-family: 'Poppins-Bold';
+    font-weight: bold;
+
+}
+
+.about-me__text {
+    color: white;
     font-family: 'Poppins-Regular';
     font-weight: 400;
 
