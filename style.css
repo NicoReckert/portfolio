@@ -52,6 +52,7 @@ nav {
     padding: 12px 0;
 }
 
+.header__logo,
 h2 {
     color: white;
     font-size: 35px;
@@ -72,13 +73,13 @@ h2 {
     color: #70E61C;
 }
 
-.portrait-title-box {
+.hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.portrait {
+.hero__image {
     width: 600px;
     object-fit: cover;
     /* filter: drop-shadow(10px 5px #70E61C); */
@@ -86,27 +87,27 @@ h2 {
         drop-shadow(-100px 0px 50px rgba(140, 0, 255, 0.85)) drop-shadow(100px 0 50px rgba(120, 255, 40, 0.85)) drop-shadow(0 20px 40px rgba(0, 0, 0, 0.25));
 }
 
-.title-box {
+.hero__text {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
 }
 
-.title2-title-box {
+.hero__content {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.title {
+.hero__name {
     color: white;
     font-size: 90px;
     font-family: 'Poppins-Bold';
     font-weight: bold;
 }
 
-.title2 {
+.hero__intro {
     color: white;
     transform: rotate(-90deg);
     font-size: 64px;
@@ -114,7 +115,7 @@ h2 {
     font-weight: 400;
 }
 
-.title3 {
+.hero__role {
     color: #9747FF;
     font-size: 58px;
     font-family: 'Poppins-Regular';
@@ -122,7 +123,7 @@ h2 {
 
 }
 
-.icon-box {
+.social {
     margin: 24px 0;
     display: flex;
     width: 100%;
@@ -131,28 +132,28 @@ h2 {
     gap: 32px;
 }
 
-.line {
+.social__line {
     height: 1px;
     width: 100px;
     background-color: #9747FF;
 }
 
-.mail {
+.social__email {
     color: white;
     font-family: 'Poppins-Regular';
     font-weight: 400;
     font-size: 23px;
-
+    text-decoration: none;
 }
 
-.about-me-box {
+.about {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     width: 100%;
 }
 
-.about-me-sub-box {
+.about__content {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -162,7 +163,7 @@ h2 {
     padding-left: 100px;
 }
 
-.about-me__title {
+.about__title {
     color: white;
     font-size: 90px;
     font-family: 'Poppins-Bold';
@@ -170,11 +171,27 @@ h2 {
 
 }
 
-.about-me__text {
+.about__text {
     color: white;
     font-family: 'Poppins-Regular';
     font-weight: 400;
 
+}
+
+.about__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+    padding-top: 32px;
+}
+
+.about__social--item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
 }
 
 footer {
