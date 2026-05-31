@@ -176,7 +176,6 @@ h2 {
     color: white;
     font-family: 'Poppins-Regular';
     font-weight: 400;
-
 }
 
 .about__social {
@@ -312,6 +311,48 @@ h2 {
     background-color: #70E61C;
     border-radius: 10px;
     text-decoration: none;
+}
+
+.portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 84px;
+}
+
+.portfolio__header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    gap: 32px;
+}
+
+.portfolio__line-left {
+    width: 100px;
+    height: 4px;
+    background-color: #9747FF;
+}
+
+.portfolio__title {
+    color: #FFFFFF;
+    font-family: 'Poppins-Bold';
+    font-weight: bold;
+    font-size: 90px;
+}
+
+.portfolio__line-right {
+    width: 507px;
+    height: 4px;
+    background-color: #9747FF;
+}
+
+.portfolio__text {
+    color: white;
+    font-family: 'Poppins-Regular';
+    font-weight: 400;
 }
 
 footer {
