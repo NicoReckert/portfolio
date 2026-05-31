@@ -353,6 +353,72 @@ h2 {
     color: white;
     font-family: 'Poppins-Regular';
     font-weight: 400;
+    font-size: 16px;
+}
+
+.portfolio__project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+}
+
+.portfolio__project-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.portfolio__project-title {
+    color: #9747FF;
+    font-family: 'Poppins-Bold';
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.portfolio__project-tech {
+    color: #70E61C;
+    font-family: 'Poppins-Regular';
+    font-weight: 400;
+    font-size: 23px;
+}
+
+.portfolio__project-description {
+    color: white;
+    font-family: 'Poppins-Regular';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.portfolio__project-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 86px;
+}
+
+.portfolio__project-link--primary {
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: #9747FF;
+    color: white;
+    font-family: 'Poppins-Regular';
+    font-weight: 400;
+    font-size: 23px;
+    text-decoration: none;
+}
+
+.portfolio__project-link--secondary {
+    padding: 15px 30px;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Poppins-Regular';
+    font-weight: 400;
+    font-size: 23px;
+    text-decoration: none;
+    border: 1px solid #70E61C;
 }
 
 footer {
