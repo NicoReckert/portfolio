@@ -672,7 +672,7 @@ h2 {
     font-size: 23px;
 }
 
-footer {
+.footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -680,4 +680,87 @@ footer {
     margin-top: auto;
     border-top: 4px solid #70E61C;
     padding: 121px 100px;
+}
+
+.footer__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer__logo {
+    color: #FFFFFF;
+    font-family: 'Poppins-Bold';
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.footer__legal-link {
+    color: white;
+    font-family: 'Poppins-Regular';
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.footer__copyright {
+    color: white;
+    font-family: 'Poppins-Regular';
+    font-weight: 400;
+    font-size: 23px;
+}
+
+.footer__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+
+}
+
+.footer__social-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.footer__logo-o {
+    position: relative;
+    display: inline-block;
+    color: white;
+    font-family: 'Poppins-Bold';
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.footer__logo-o--half {
+    position: absolute;
+    inset: 0;
+    color: #70E61C;
+    overflow: hidden;
+    font-family: 'Poppins-Bold';
+    font-weight: bold;
+    font-size: 40px;
+    clip-path: inset(0 0 0 50%);
+}
+
+.footer__logo-i {
+    position: relative;
+    display: inline-block;
+    color: white;
+    font-family: 'Poppins-Bold';
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.footer__logo-i-dot {
+    position: absolute;
+    inset: 0;
+    color: #9747FF;
+    overflow: hidden;
+    font-family: 'Poppins-Bold';
+    font-weight: bold;
+    font-size: 40px;
+    clip-path: inset(0 0 64% 0);
 }
