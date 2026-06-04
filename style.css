@@ -522,6 +522,155 @@ h2 {
     color: #9747FF;
 }
 
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 148px;
+}
+
+.contact__header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 32px;
+}
+
+.contact__line {
+    width: 535px;
+    height: 4px;
+    background-color: #9747FF;
+}
+
+.contact__title {
+    color: #FFFFFF;
+    font-family: 'Poppins-Bold';
+    font-weight: bold;
+    font-size: 90px;
+}
+
+.contact__content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 148px;
+    padding-left: 100px;
+}
+
+.contact__info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 24px 0px;
+    width: 474px;
+}
+
+.contact__subtitle {
+    color: #FFFFFF;
+    font-family: 'Poppins-Bold';
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.contact__text {
+    color: white;
+    font-family: 'Poppins-Regular';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.contact__form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px 0;
+}
+
+.contact__input {
+    width: 617px;
+    height: 50px;
+    border: 1px solid #9747FF;
+    padding: 15px 25px;
+    background-color: #141D2F;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Poppins-Regular';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.contact__textarea {
+    width: 617px;
+    height: 202px;
+    border: 1px solid #9747FF;
+    padding: 15px 25px;
+    background-color: #141D2F;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Poppins-Regular';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.contact__privacy {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact__checkbox {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #70E61C;
+    border-radius: 3px;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__checkbox:checked::after {
+    content: "✓";
+    color: #70E61C;
+    font-size: 18px;
+}
+
+.contact__privacy-text {
+    color: white;
+    font-family: 'Poppins-Regular';
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.contact__privacy-link {
+    color: #9747FF;
+    font-family: 'Poppins-Regular';
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.contact__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: #B6B6B6;
+    color: white;
+    font-family: 'Poppins-Regular';
+    font-weight: 400;
+    font-size: 23px;
+}
+
 footer {
     display: flex;
     justify-content: center;
