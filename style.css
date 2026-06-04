@@ -529,6 +529,7 @@ h2 {
     flex-direction: column;
     width: 100%;
     margin-top: 148px;
+    margin-bottom: 148px;
 }
 
 .contact__header {
@@ -673,8 +674,10 @@ h2 {
 
 footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     margin-top: auto;
+    border-top: 4px solid #70E61C;
+    padding: 121px 100px;
 }
