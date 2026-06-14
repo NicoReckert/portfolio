@@ -12,12 +12,19 @@
 <body>
     <div class="all-content">
         <div class="content">
-            <header>
+            <header class="header">
                 <span class="header__logo">Nico</span>
-                <nav>
-                    <a class="nav-link" href="">About me</a>
-                    <a class="nav-link" href="">Skills</a>
-                    <a class="nav-link" href="">Portfolio</a>
+                <nav class="header__nav">
+                    <div class="header__links">
+                        <a class="header__link" href="#about">About me</a>
+                        <a class="header__link" href="#skills">Skills</a>
+                        <a class="header__link" href="#portfolio">Portfolio</a>
+                    </div>
+                    <div class="header__language-switcher">
+                        <button class="header__language-button" id="germanButton" onclick="setLanguageGerman()">DE</button>
+                        <button class="header__language-button header__language-button--active" id="englishButton"
+                            onclick="setLanguageEnglish()">EN</button>
+                    </div>
                 </nav>
             </header>
             <section class="hero">
@@ -38,7 +45,7 @@
                 <img class="social__icon" src="./assets/icons/Property 1=Default(3).png" alt="">
                 <a class="social__email" href="mailto:n.r-86@gmx.de">n.r-86@gmx.de</a>
             </div>
-            <section class="about">
+            <section class="about" id="about">
                 <div class="about__content">
                     <h2 class="about__title">About me</h2>
                     <p class="about__text">
@@ -71,7 +78,7 @@
                     <span class="about__line"></span>
                 </div>
             </section>
-            <section class="skills">
+            <section class="skills" id="skills">
                 <ul class="skills__grid">
                     <li class="skills__item">
                         <img class="skills__icon" src="./assets/icons/14. Icons.png" alt="HTML">
@@ -132,7 +139,7 @@
                     <a href="#contact" class="skills__button">Get in touch</a>
                 </div>
             </section>
-            <section class="portfolio">
+            <section class="portfolio" id="portfolio">
                 <div class="portfolio__header">
                     <span class="portfolio__line-left"></span>
                     <h2 class="portfolio__title">Portfolio</h2>
@@ -240,8 +247,9 @@
     </div>
     <footer class="footer">
         <div class="footer__info">
-            <h2 class="footer__logo">N<span class="footer__logo-i">i<span class="footer__logo-i-dot">i</span></span>c<span
-                    class="footer__logo-o">o<span class="footer__logo-o--half">o</span></span></h2>
+            <h2 class="footer__logo">N<span class="footer__logo-i">i<span
+                        class="footer__logo-i-dot">i</span></span>c<span class="footer__logo-o">o<span
+                        class="footer__logo-o--half">o</span></span></h2>
             <a class="footer__legal-link" href="">Legal Notice</a>
         </div>
         <p class="footer__copyright">© Nico Reckert 2026</p>
