@@ -121,7 +121,28 @@ h2 {
     font-size: 58px;
     font-family: 'Poppins-Regular';
     font-weight: 400;
+}
 
+.hero__button {
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: none;
+    align-self: center;
+    font-size: 23px;
+    font-family: 'Poppins-Regular';
+    font-weight: 400;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #70E61C;
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+    transform-origin: top center;
+    transition: all 100ms ease-in-out;
+    margin-top: 36px;
+}
+
+.hero__button:hover {
+    transform: scale(1.15);
+    background-color: #9747FF;
 }
 
 .social {
