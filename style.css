@@ -386,12 +386,19 @@ h2 {
     background-color: #70E61C;
     border-radius: 10px;
     text-decoration: none;
+    transform-origin: top right;
+    transition: all 100ms ease-in-out;
+}
+
+.skills__button:hover {
+    transform: scale(1.15);
+    background-color: #9747FF;
 }
 
 .portfolio {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     width: 100%;
     margin-top: 84px;
@@ -429,6 +436,7 @@ h2 {
     font-family: 'Poppins-Regular';
     font-weight: 400;
     font-size: 16px;
+    align-self: center;
 }
 
 .portfolio__project {
@@ -436,6 +444,11 @@ h2 {
     justify-content: center;
     align-items: center;
     margin-top: 64px;
+    padding: 0 128px;
+}
+
+.portfolio__project--reversed {
+    flex-direction: row-reverse;
 }
 
 .portfolio__project-content {
@@ -444,6 +457,10 @@ h2 {
     align-items: flex-start;
     flex-direction: column;
     gap: 35px;
+}
+
+.portfolio__project-content--end {
+    align-items: flex-end;
 }
 
 .portfolio__project-title {
@@ -489,6 +506,16 @@ h2 {
     font-weight: 400;
     font-size: 23px;
     text-decoration: none;
+    transition: all 100ms ease-in-out;
+}
+
+.portfolio__project-link--primary:hover {
+    background-color: #70E61C;
+}
+
+.portfolio__project-link--primary:active {
+    background-color: white;
+    color: black;
 }
 
 .portfolio__project-link--secondary {
@@ -500,6 +527,16 @@ h2 {
     font-size: 23px;
     text-decoration: none;
     border: 1px solid #70E61C;
+    transition: all 100ms ease-in-out;
+}
+
+.portfolio__project-link--secondary:hover {
+    background-color: #70E61C;
+}
+
+.portfolio__project-link--secondary:active {
+    background-color: white;
+    color: black;
 }
 
 .references {
