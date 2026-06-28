@@ -21,7 +21,8 @@
                         <a class="header__link" href="#portfolio">Portfolio</a>
                     </div>
                     <div class="header__language-switcher">
-                        <button class="header__language-button" id="germanButton" onclick="setLanguageGerman()">DE</button>
+                        <button class="header__language-button" id="germanButton"
+                            onclick="setLanguageGerman()">DE</button>
                         <button class="header__language-button header__language-button--active" id="englishButton"
                             onclick="setLanguageEnglish()">EN</button>
                     </div>
@@ -230,16 +231,44 @@
                         <p class="contact__text">Need a Frontend developer? Contact me!</p>
                     </div>
                     <form class="contact__form">
-                        <input class="contact__input" type="text" placeholder="Your name">
-                        <input class="contact__input" type="email" placeholder="Your email">
-                        <textarea class="contact__textarea" placeholder="Your message"></textarea>
-                        <div class="contact__privacy">
-                            <input class="contact__checkbox" type="checkbox">
-                            <p class="contact__privacy-text">I've read the <a class="contact__privacy-link"
-                                    href="">privacy policy</a> and agree to the processing of my data as
-                                outlined.</p>
+                        <div class="contact__group">
+                            <div class="contact__field" id="field-name">
+                                <input class="contact__input" id="contact-name" type="text" placeholder="Your name">
+                            </div>
+                            <span class="contact__error-text d-none" id="error-name">Your name is
+                                required</span>
                         </div>
-                        <button class="contact__button">Send message :)</button>
+                        <div class="contact__group">
+                            <div class="contact__field" id="field-email">
+                                <input class="contact__input" id="contact-email" type="email" autocomplete="email" placeholder="Your email">
+                            </div>
+                            <span class="contact__error-text d-none" id="error-email-required">Your email is
+                                required</span>
+                            <span class="contact__error-text d-none" id="error-email-format">
+                                Please enter a valid email address
+                            </span>
+                        </div>
+                        <div class="contact__group">
+                            <div class="contact__field-area" id="field-message">
+                                <textarea class="contact__textarea" id="contact-message"
+                                    placeholder="Your message"></textarea>
+                            </div>
+                            <span class="contact__error-text d-none" id="error-message">Your message is
+                                empty</span>
+                        </div>
+                        <div class="contact__group">
+                            <div class="contact__privacy">
+                                <div class="contact__checkbox-wrapper">
+                                    <input class="contact__checkbox" id="contact-policy" type="checkbox">
+                                </div>
+                                <p class="contact__privacy-text">I've read the <a class="contact__privacy-link"
+                                        href="">privacy policy</a> and agree to the processing of my data as
+                                    outlined.</p>
+                            </div>
+                            <span class="contact__error-text d-none" id="error-policy">Please accept the
+                                privacy policy.</span>
+                        </div>
+                        <button class="contact__button" id="submit-button">Send message :)</button>
                     </form>
                 </div>
             </section>

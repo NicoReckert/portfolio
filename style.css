@@ -667,7 +667,7 @@ h2 {
 .contact__content {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     gap: 148px;
     padding-left: 100px;
 }
@@ -703,23 +703,117 @@ h2 {
     gap: 32px 0;
 }
 
-.contact__input {
+.contact__group {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.contact__field {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid #9747FF;
+    border-radius: 10px;
     width: 617px;
     height: 50px;
-    border: 1px solid #9747FF;
+    padding-right: 25px;
+}
+
+.contact__field:hover,
+.contact__field:focus-within {
+    border: 1px solid #70E61C;
+}
+
+.contact__field--success::after {
+    content: "";
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    background: url("assets/icons/Vector(1).svg") no-repeat center / contain;
+}
+
+.contact__field--error::after {
+    content: "";
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    background: url("assets/icons/Vector.svg") no-repeat center / contain;
+}
+
+.contact__input {
+    width: 100%;
+    height: 100%;
     padding: 15px 25px;
-    background-color: #141D2F;
     border-radius: 10px;
+    background-color: #141D2F;
     color: white;
     font-family: 'Poppins-Regular';
     font-weight: 400;
     font-size: 16px;
+    outline: none;
+    border: none;
+}
+
+.contact__input::placeholder {
+    color: white;
+}
+
+.contact__input:focus::placeholder {
+    opacity: 0;
+}
+
+.contact__field-area {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 1px solid #9747FF;
+    border-radius: 10px;
+    width: 617px;
+    height: 202px;
+}
+
+.contact__field-area:hover,
+.contact__field-area:focus-within {
+    border: 1px solid #70E61C;
+}
+
+.contact__field-area--success::after {
+    content: "";
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    background: url("assets/icons/Vector(1).svg") no-repeat center / contain;
+}
+
+.contact__field-area--error::after {
+    content: "";
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    background: url("assets/icons/Vector.svg") no-repeat center / contain;
 }
 
 .contact__textarea {
-    width: 617px;
-    height: 202px;
-    border: 1px solid #9747FF;
+    width: 100%;
+    height: 100%;
     padding: 15px 25px;
     background-color: #141D2F;
     border-radius: 10px;
@@ -727,6 +821,17 @@ h2 {
     font-family: 'Poppins-Regular';
     font-weight: 400;
     font-size: 16px;
+    outline: none;
+    border: none;
+    resize: none;
+}
+
+.contact__textarea::placeholder {
+    color: white;
+}
+
+.contact__textarea:focus::placeholder {
+    opacity: 0;
 }
 
 .contact__privacy {
@@ -734,6 +839,34 @@ h2 {
     justify-content: flex-start;
     align-items: center;
     gap: 8px;
+}
+
+.contact__privacy-text {
+    color: white;
+    font-family: 'Poppins-Regular';
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.contact__privacy-link {
+    color: #9747FF;
+    font-family: 'Poppins-Regular';
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.contact__checkbox-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+}
+
+.contact__checkbox-wrapper:hover {
+    border-radius: 38px;
+    background-color: #183771;
 }
 
 .contact__checkbox {
@@ -756,21 +889,6 @@ h2 {
     font-size: 18px;
 }
 
-.contact__privacy-text {
-    color: white;
-    font-family: 'Poppins-Regular';
-    font-weight: 400;
-    font-size: 14px;
-}
-
-.contact__privacy-link {
-    color: #9747FF;
-    font-family: 'Poppins-Regular';
-    font-weight: 400;
-    font-size: 14px;
-    text-decoration: none;
-}
-
 .contact__button {
     display: flex;
     justify-content: center;
@@ -782,6 +900,33 @@ h2 {
     font-family: 'Poppins-Regular';
     font-weight: 400;
     font-size: 23px;
+    pointer-events: none;
+}
+
+.contact__button--enabled {
+    background-color: #70E61C;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.contact__error-text {
+    font-family: 'Poppins-Regular';
+    font-weight: 400;
+    font-size: 14px;
+    color: #E61C40;
+}
+
+.is-error {
+    border: 1px solid red;
+}
+
+.is-error:hover,
+.is-error:focus-within {
+    border-color: red;
+}
+
+.is-success {
+    border: 1px solid #70E61C;
 }
 
 .footer {
@@ -875,4 +1020,22 @@ h2 {
     font-weight: bold;
     font-size: 40px;
     clip-path: inset(0 0 64% 0);
+}
+
+.contact__input:-webkit-autofill,
+.contact__input:-webkit-autofill:hover,
+.contact__input:-webkit-autofill:focus,
+.contact__input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 1000px #141D2F inset;
+    -webkit-text-fill-color: white;
+
+    font-family: 'Poppins-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.d-none {
+    display: none;
 }
