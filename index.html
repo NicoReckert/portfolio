@@ -13,7 +13,8 @@
     <div class="all-content">
         <div class="content">
             <header class="header">
-                <span class="header__logo">Nico</span>
+                <span class="header__logo">N<span class="header__logo-i">i</span>c<span class="header__logo-o">o</span>
+                </span>
                 <nav class="header__nav">
                     <div class="header__links">
                         <a class="header__link" href="#about">About me</a>
@@ -29,7 +30,10 @@
                 </nav>
             </header>
             <section class="hero">
-                <img class="hero__image" src="./assets/img/portrait.png" alt="">
+                <div class="hero__image-wrapper">
+                    <img class="hero__image" src="./assets/img/portrait.png" alt="">
+                    <img class="hero__shadows" src="./assets/img/29. photo shadows.svg" alt="">
+                </div>
                 <div class="hero__content">
                     <span class="hero__intro">I am</span>
                     <div class="hero__text">
@@ -38,6 +42,7 @@
                         <a href="#contact" class="hero__button">Let's talk!</a>
                     </div>
                 </div>
+                <img class="hero__background" src="./assets/img/28. Hero Background.svg" alt="">
             </section>
             <div class="social">
                 <span class="social__line"></span>
@@ -240,7 +245,8 @@
                         </div>
                         <div class="contact__group">
                             <div class="contact__field" id="field-email">
-                                <input class="contact__input" id="contact-email" type="email" autocomplete="email" placeholder="Your email">
+                                <input class="contact__input" id="contact-email" type="email" autocomplete="email"
+                                    placeholder="Your email">
                             </div>
                             <span class="contact__error-text d-none" id="error-email-required">Your email is
                                 required</span>
@@ -276,9 +282,7 @@
     </div>
     <footer class="footer">
         <div class="footer__info">
-            <h2 class="footer__logo">N<span class="footer__logo-i">i<span
-                        class="footer__logo-i-dot">i</span></span>c<span class="footer__logo-o">o<span
-                        class="footer__logo-o--half">o</span></span></h2>
+            <h2 class="footer__logo">N<span class="footer__logo-i">i</span>c<span class="footer__logo-o">o</span></h2>
             <a class="footer__legal-link" href="">Legal Notice</a>
         </div>
         <p class="footer__copyright">© Nico Reckert 2026</p>
