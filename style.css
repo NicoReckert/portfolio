@@ -1,3 +1,148 @@
+/* .hero__image-wrapper,
+.hero__heading,
+.hero__button,
+.hero__social,
+.hero__scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.8s ease forwards;
+}
+
+.hero__image-wrapper { animation-delay: 0.1s; }
+.hero__heading       { animation-delay: 0.3s; }
+.hero__button        { animation-delay: 0.5s; }
+.hero__social        { animation-delay: 0.7s; }
+.hero__scroll        { animation-delay: 0.9s; }
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero__image-wrapper {
+    opacity: 0;
+    transform: scale(0.95);
+    animation: imageIn 1s ease forwards;
+}
+
+@keyframes imageIn {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+} */
+
+/* .hero__image-wrapper,
+.hero__heading,
+.hero__button,
+.hero__social,
+.hero__scroll,
+.hero__divider {
+    opacity: 0;
+    transform: translateY(20px) scale(1.03);
+    filter: blur(10px);
+}
+
+.hero__image-wrapper {
+    animation: imageReveal 1s ease forwards;
+    animation-delay: 0.1s;
+}
+
+@keyframes imageReveal {
+    0% {
+        opacity: 0;
+        transform: scale(1.08);
+        filter: blur(14px);
+    }
+    60% {
+        opacity: 1;
+        filter: blur(2px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        filter: blur(0);
+    }
+}
+
+.hero__heading {
+    animation: textIn 0.8s ease forwards;
+    animation-delay: 0.6s;
+}
+
+.hero__button {
+    animation: textIn 0.8s ease forwards;
+    animation-delay: 0.8s;
+}
+
+@keyframes textIn {
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        filter: blur(0);
+    }
+}
+
+.hero__social {
+    animation: uiIn 0.8s ease forwards;
+    animation-delay: 1.0s;
+}
+
+.hero__scroll {
+    animation: uiIn 0.8s ease forwards;
+    animation-delay: 1.2s;
+}
+
+@keyframes uiIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+.hero__divider {
+    animation: dividerIn 1.2s ease forwards;
+    animation-delay: 1.4s;
+}
+
+@keyframes dividerIn {
+    0% {
+        opacity: 0;
+        transform: translateY(60px);
+        filter: blur(8px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        rgba(0, 150, 255, 0.08),
+        transparent
+    );
+    transform: translateY(-100%);
+    animation: scan 1.2s ease forwards;
+    z-index: 5;
+    pointer-events: none;
+}
+
+@keyframes scan {
+    to {
+        transform: translateY(100%);
+    }
+} */
+
 :root {
     --primary-1: #4B47FF;
     /*#70E61C*/
