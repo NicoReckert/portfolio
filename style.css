@@ -579,6 +579,16 @@ h2 {
     gap: 16px;
 }
 
+.about__social-icon {
+    width: 48px;
+    object-fit: cover;
+    transition: all 120ms ease-in-out;
+}
+
+.about__social-icon:hover {
+    transform: scale(1.33);
+}
+
 .about__visual {
     display: flex;
     justify-content: center;

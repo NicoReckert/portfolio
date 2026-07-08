@@ -22,10 +22,9 @@
                         <a class="header__link" href="#portfolio">Portfolio</a>
                     </div>
                     <div class="header__language-switcher">
-                        <button class="header__language-button" id="germanButton"
-                            onclick="setLanguageGerman()">DE</button>
-                        <button class="header__language-button header__language-button--active" id="englishButton"
-                            onclick="setLanguageEnglish()">EN</button>
+                        <button class="header__language-button" id="german-button">DE</button>
+                        <button class="header__language-button header__language-button--active"
+                            id="english-button">EN</button>
                     </div>
                 </nav>
             </header>
@@ -71,9 +70,9 @@
             </section>
             <section class="about" id="about">
                 <div class="about__content">
-                    <h2 class="about__title">About me</h2>
+                    <h2 class="about__title" id="about-title">About me</h2>
                     <div class="about__body">
-                        <p class="about__text">
+                        <p class="about__text" id="about-introduction">
                             Schon seit meiner Kindheit interessiere ich mich für IT und Technik. Besonders fasziniert
                             mich,
                             wie Software funktioniert und welche Möglichkeiten sie bietet. Heute begeistert mich vor
@@ -88,14 +87,16 @@
                         <div class="about__social">
                             <div class="about__social-item">
                                 <img class="about__social-icon" src="./assets/icons/11.Location.png" alt="">
-                                <p class="about__text">Ich bin derzeit in Zielitz in Sachsen-Anhalt ansässig. Ich
+                                <p class="about__text" id="about-location">Ich bin derzeit in Zielitz in Sachsen-Anhalt
+                                    ansässig. Ich
                                     arbeite
                                     gerne remote oder in
                                     hybriden Modellen. Eine Relocation ist für mich aktuell nicht vorgesehen.</p>
                             </div>
                             <div class="about__social-item">
                                 <img class="about__social-icon" src="./assets/icons/12. bulb desktop.png" alt="">
-                                <p class="about__text">Ich bin sehr daran interessiert, neue Technologien kennenzulernen
+                                <p class="about__text" id="about-learning">Ich bin sehr daran interessiert, neue
+                                    Technologien kennenzulernen
                                     und
                                     meine Fähigkeiten kontinuierlich weiterzuentwickeln. Besonders im Bereich
                                     Webentwicklung
@@ -104,7 +105,8 @@
                             </div>
                             <div class="about__social-item">
                                 <img class="about__social-icon" src="./assets/icons/13. puzzle desktop.png" alt="">
-                                <p class="about__text">Beim Lösen von Problemen gehe ich strukturiert und analytisch
+                                <p class="about__text" id="about-problem-solving">Beim Lösen von Problemen gehe ich
+                                    strukturiert und analytisch
                                     vor.
                                     Ich versuche zunächst, das Problem genau zu verstehen und suche dann nach einfachen
                                     und
@@ -308,7 +310,8 @@
                                     <input class="contact__checkbox" id="contact-policy" type="checkbox">
                                 </div>
                                 <p class="contact__privacy-text">I've read the <a class="contact__privacy-link"
-                                        href="./html/privacy-policy.html">privacy policy</a> and agree to the processing of my data as
+                                        href="./html/privacy-policy.html">privacy policy</a> and agree to the processing
+                                    of my data as
                                     outlined.</p>
                             </div>
                             <span class="contact__error-text d-none" id="error-policy">Please accept the
@@ -338,7 +341,7 @@
             </a>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script type="module" src="main.js"></script>
 </body>
 
 </html>

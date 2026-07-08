@@ -1,16 +1,19 @@
+import { languageGerman, languageEnglish } from "./js/language-data.js";
+import { dom } from "./js/dom-elements.js";
+
 let isNameValid = false;
 let isEmailValid = false;
 let isMessageValid = false;
 let isPolicyValid = false;
 
 function setLanguageGerman() {
-    document.getElementById('englishButton').classList.remove('header__language-button--active');
-    document.getElementById('germanButton').classList.add('header__language-button--active');
+    dom.englishButton.classList.remove('header__language-button--active');
+    dom.germanButton.classList.add('header__language-button--active');
 }
 
 function setLanguageEnglish() {
-    document.getElementById('germanButton').classList.remove('header__language-button--active');
-    document.getElementById('englishButton').classList.add('header__language-button--active');
+    dom.germanButton.classList.remove('header__language-button--active');
+    dom.englishButton.classList.add('header__language-button--active');
 }
 
 function validateName() {
@@ -115,3 +118,33 @@ contactMessage.addEventListener('input', validateMessage);
 contactMessage.addEventListener('blur', validateMessage);
 
 contactPolicy.addEventListener('change', validateCheckbox);
+
+
+
+
+
+function changeLanguage(language) {
+    let currentLanguage = language === "de" ? languageGerman : languageEnglish;
+    dom.aboutTitle.innerHTML = currentLanguage.about.title;
+    dom.aboutIntroduction.innerHTML = currentLanguage.about.introduction;
+    dom.aboutLocation.innerHTML = currentLanguage.about.location;
+    dom.aboutLearning.innerHTML = currentLanguage.about.learning;
+    dom.aboutProblemSolving.innerHTML = currentLanguage.about.problemSolving;
+}
+
+dom.germanButton.addEventListener('click', () => {
+    setLanguageGerman();
+    changeLanguage("de");
+})
+
+dom.englishButton.addEventListener('click', () => {
+    setLanguageEnglish();
+    changeLanguage("en");
+})
+
+function init() {
+    setLanguageEnglish();
+    changeLanguage("en");
+}
+
+init();
