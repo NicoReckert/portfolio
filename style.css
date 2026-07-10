@@ -912,6 +912,7 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 272px;
     padding: 48px 96px;
     border: 4px solid var(--primary-1);
     border-radius: 32px;
@@ -974,16 +975,39 @@ h2 {
     gap: 20px;
 }
 
-.references__arrow {
-    color: var(--primary-1);
-    background-color: transparent;
-    font-size: 30px;
+.references__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.references__button:hover {
+    border-radius: 100%;
+    border: 2px solid var(--primary-2);
+}
+
+.references__button:active {
+    border: none
+}
+
+.references__button-arrow {
+    width: 21px;
+    height: 21px;
+    object-fit: cover;
 }
 
 .references__dot {
     font-size: 24px;
     color: var(--primary-2);
+}
+
+.references__dot-active {
+    color: var(--primary-1);
 }
 
 .contact {

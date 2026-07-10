@@ -1,5 +1,6 @@
 import { languageGerman, languageEnglish } from "./js/language-data.js";
 import { dom } from "./js/dom-elements.js";
+import { references } from "./js/reference-data.js";
 
 let isNameValid = false;
 let isEmailValid = false;
@@ -148,3 +149,58 @@ function init() {
 }
 
 init();
+
+
+
+let currentReference = 0;
+
+function setReference(index) {
+    currentReference = index;
+
+    const reference = references[currentReference];
+
+    dom.referencesQuote.textContent = reference.text;
+    dom.referencesAuthor.textContent = reference.author;
+    dom.referencesImage.src = reference.portraitSrc;
+
+    updateDots();
+}
+
+function nextReference() {
+    currentReference++;
+
+    if (currentReference >= references.length) {
+        currentReference = 0;
+    }
+
+    setReference(currentReference);
+}
+
+function prevReference() {
+    currentReference--;
+
+    if (currentReference < 0) {
+        currentReference = references.length - 1;
+    }
+
+    setReference(currentReference);
+}
+
+function updateDots() {
+    dom.referencesDots.forEach((dot, index) => {
+        dot.classList.toggle(
+            "references__dot-active",
+            index === currentReference
+        );
+    });
+}
+
+    dom.referencesDots.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+            setReference(index);
+        });
+    });
+
+
+    dom.referencesNext.addEventListener("click", nextReference);
+    dom.referencesPrev.addEventListener("click", prevReference);

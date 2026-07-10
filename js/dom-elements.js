@@ -6,4 +6,10 @@ export const dom = {
     aboutProblemSolving: document.getElementById('about-problem-solving'),
     germanButton: document.getElementById('german-button'),
     englishButton: document.getElementById('english-button'),
+    referencesPrev: document.getElementById("references-prev"),
+    referencesNext: document.getElementById("references-next"),
+    referencesQuote: document.getElementById("references-quote"),
+    referencesAuthor: document.getElementById("references-author"),
+    referencesImage: document.getElementById("references-image"),
+    referencesDots: Array.from(document.querySelectorAll(".references__dot"))
 }
