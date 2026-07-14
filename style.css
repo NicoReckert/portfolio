@@ -175,7 +175,7 @@ body {
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     background-color: #141D2F;
 }
 
@@ -266,8 +266,6 @@ body {
     width: 100%;
     max-width: 1440px;
     padding: 37px 100px;
-    gap: 590px;
-
 }
 
 .header__nav {
@@ -366,6 +364,15 @@ h2 {
     pointer-events: none;
     font-family: 'Poppins-Bold';
     font-weight: bold;
+}
+
+.header__menu-button {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 .hero {
@@ -472,6 +479,11 @@ h2 {
 .hero__button:hover {
     transform: scale(1.15);
     background-color: var(--primary-2);
+}
+
+.hero__button:active {
+    background-color: #FFFFFF;
+    color: var(--primary-1);
 }
 
 .hero__divider {
@@ -817,6 +829,11 @@ h2 {
     background-color: var(--primary-2);
 }
 
+.skills__button:active {
+    background-color: #FFFFFF;
+    color: var(--primary-1);
+}
+
 .portfolio {
     display: flex;
     justify-content: center;
@@ -938,7 +955,7 @@ h2 {
 
 .portfolio__project-link--primary:active {
     background-color: white;
-    color: black;
+    color: var(--primary-1);
 }
 
 .portfolio__project-link--secondary {
@@ -959,7 +976,7 @@ h2 {
 
 .portfolio__project-link--secondary:active {
     background-color: white;
-    color: black;
+    color: var(--primary-1);
 }
 
 .references {
@@ -1371,6 +1388,18 @@ h2 {
     background-color: var(--primary-1);
     cursor: pointer;
     pointer-events: all;
+    transition: all 120ms ease-in-out;
+}
+
+.contact__button--enabled:hover {
+    transform: scale(1.15);
+    transform-origin: top;
+    background-color: var(--primary-2);
+}
+
+.contact__button--enabled:active {
+    background-color: #FFFFFF;
+    color: var(--primary-1);
 }
 
 .contact__error-text {
@@ -1485,6 +1514,14 @@ h2 {
     color: transparent;
 }
 
+.about,
+.skills,
+.portfolio,
+.references,
+.contact {
+    scroll-margin-top: 126px;
+}
+
 .overlay {
     position: fixed;
     inset: 0;
@@ -1531,4 +1568,58 @@ h2 {
 
 .shape--two path {
     fill: var(--primary-1);
+}
+
+/* Responsive */
+
+@media (max-width: 650px) {
+    .header__container {
+        padding: 37px 25px;
+    }
+
+    .header__links,
+    .header__language-switcher {
+        display: none;
+    }
+
+    .header__menu-button {
+        display: flex;
+    }
+
+    .hero__image-wrapper {
+        height: auto;
+    }
+
+    .hero__image {
+        width: 410px;
+    }
+
+    .hero__main {
+        flex-direction: column;
+    }
+
+    .hero__heading {
+        gap: 4px;
+    }
+
+    .hero__intro {
+        font-size: 32px;
+    }
+
+    .hero__name {
+        font-size: 44px;
+    }
+
+    .hero__role {
+        font-size: 28px;
+    }
+
+    .hero__divider {
+        top: calc(100dvh - 450px);
+    }
+
+    .hero__shadows {
+        top: 0;
+        scale: 1.0;
+    }
 }
