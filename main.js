@@ -195,12 +195,95 @@ function updateDots() {
     });
 }
 
-    dom.referencesDots.forEach((dot, index) => {
-        dot.addEventListener("click", () => {
-            setReference(index);
-        });
+dom.referencesDots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+        setReference(index);
     });
+});
 
 
-    dom.referencesNext.addEventListener("click", nextReference);
-    dom.referencesPrev.addEventListener("click", prevReference);
+dom.referencesNext.addEventListener("click", nextReference);
+dom.referencesPrev.addEventListener("click", prevReference);
+
+const form = document.getElementById("contact-form");
+
+form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    const formData = {
+        name: document.getElementById("contact-name").value.trim(),
+        email: document.getElementById("contact-email").value.trim(),
+        message: document.getElementById("contact-message").value.trim()
+    };
+
+    try {
+        const response = await fetch("./send-mail.php", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(formData)
+        });
+
+        const result = await response.json();
+
+        if (result.success) {
+            showOverlay(
+                "Message sent!",
+                "Thank you for your message. I'll get back to you as soon as possible."
+            );
+            form.reset();
+            isNameValid = false;
+            isEmailValid = false;
+            isMessageValid = false;
+            isPolicyValid = false;
+
+            updateSubmitButton();
+            document.querySelectorAll(".is-success, .is-error").forEach(element => {
+                element.classList.remove("is-success", "is-error");
+            });
+
+            document.querySelectorAll(
+                ".contact__field--success, .contact__field--error, " +
+                ".contact__field-area--success, .contact__field-area--error"
+            ).forEach(element => {
+                element.classList.remove(
+                    "contact__field--success",
+                    "contact__field--error",
+                    "contact__field-area--success",
+                    "contact__field-area--error"
+                );
+            });
+
+            document.querySelectorAll(".contact__error-text").forEach(element => {
+                element.classList.add("d-none");
+            });
+        } else {
+            showOverlay(
+                "Error",
+                "Unfortunately your message could not be sent. Please try again later."
+            );
+            console.error(result.error);
+        }
+
+    } catch (error) {
+        console.error(error);
+        showOverlay(
+            "Server Error",
+            "A server error occurred. Please try again later."
+        );
+    }
+});
+
+const overlay = document.getElementById("overlay");
+const overlayTitle = document.getElementById("overlay-title");
+const overlayMessage = document.getElementById("overlay-message");
+
+function showOverlay(title, message) {
+    overlayTitle.textContent = title;
+    overlayMessage.textContent = message;
+    overlay.classList.remove("d-none");
+    setTimeout(() => {
+        overlay.classList.add("d-none");
+    }, 2500);
+}

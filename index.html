@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Nico Reckert</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/icons/favicon.svg">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/font.css">
 </head>
@@ -12,21 +13,28 @@
 <body>
     <div class="all-content">
         <div class="content">
+            <img class="shadow2" src="./assets/img/31. Green shadow Skills Portfolio.svg" alt="">
+            <img class="shadow3" src="./assets/img/32 Purple shadow portfolio.svg" alt="">
+            <img class="shadow4" src="./assets/img/33. Purple shadow Footer.svg" alt="">
+            <img class="shadow5" src="./assets/img/54. Green shadow 3 (skills and portfolio section).svg" alt="">
             <header class="header">
-                <span class="header__logo">N<span class="header__logo-i">i</span>c<span class="header__logo-o">o</span>
-                </span>
-                <nav class="header__nav">
-                    <div class="header__links">
-                        <a class="header__link" href="#about">About me</a>
-                        <a class="header__link" href="#skills">Skills</a>
-                        <a class="header__link" href="#portfolio">Portfolio</a>
-                    </div>
-                    <div class="header__language-switcher">
-                        <button class="header__language-button" id="german-button">DE</button>
-                        <button class="header__language-button header__language-button--active"
-                            id="english-button">EN</button>
-                    </div>
-                </nav>
+                <div class="header__container">
+                    <span class="header__logo">N<span class="header__logo-i">i</span>c<span
+                            class="header__logo-o">o</span>
+                    </span>
+                    <nav class="header__nav">
+                        <div class="header__links">
+                            <a class="header__link" href="#about">About me</a>
+                            <a class="header__link" href="#skills">Skills</a>
+                            <a class="header__link" href="#portfolio">Portfolio</a>
+                        </div>
+                        <div class="header__language-switcher">
+                            <button class="header__language-button" id="german-button">DE</button>
+                            <button class="header__language-button header__language-button--active"
+                                id="english-button">EN</button>
+                        </div>
+                    </nav>
+                </div>
             </header>
             <section class="hero">
                 <div class="hero__container">
@@ -69,6 +77,7 @@
                 </div>
             </section>
             <section class="about" id="about">
+                <img class="shadow1" src="./assets/img/30. Purple shadow about me.svg" alt="">
                 <div class="about__content">
                     <h2 class="about__title" id="about-title">About me</h2>
                     <div class="about__body">
@@ -117,7 +126,7 @@
                     </div>
                 </div>
                 <div class="about__visual">
-                    <div class="about__image-box">
+                    <div class="about__portrait-wrapper">
                         <img class="about__image" src="./assets/img/portrait.png" alt="">
                     </div>
                     <span class="about__line"></span>
@@ -202,7 +211,8 @@
                             using drag and drop
                             functions, assign users and categories.</p>
                         <div class="portfolio__project-actions">
-                            <a class="portfolio__project-link--primary" href="">Live test</a>
+                            <a class="portfolio__project-link--primary" href="https://join.nico-reckert.de"
+                                target="_blank">Live test</a>
                             <a class="portfolio__project-link--secondary" href="https://github.com/NicoReckert/join"
                                 target="_blank">Github</a>
                         </div>
@@ -218,7 +228,8 @@
                             using drag and drop
                             functions, assign users and categories.</p>
                         <div class="portfolio__project-actions">
-                            <a class="portfolio__project-link--primary" href="">Live test</a>
+                            <a class="portfolio__project-link--primary" href="https://rise-of-el-brueno.nico-reckert.de"
+                                target="_blank">Live test</a>
                             <a class="portfolio__project-link--secondary"
                                 href="https://github.com/NicoReckert/rise-of-el-brueno" target="_blank">Github</a>
                         </div>
@@ -232,7 +243,8 @@
                         <p class="portfolio__project-description">Based on the PokéAPI a simple library that provides
                             and catalogues pokemon information.</p>
                         <div class="portfolio__project-actions">
-                            <a class="portfolio__project-link--primary" href="">Live test</a>
+                            <a class="portfolio__project-link--primary" href="https://pokedex.nico-reckert.de"
+                                target="_blank">Live test</a>
                             <a class="portfolio__project-link--secondary" href="https://github.com/NicoReckert/pokedex"
                                 target="_blank">Github</a>
                         </div>
@@ -242,26 +254,33 @@
             <section class="references">
                 <div class="references__item">
                     <div class="references__content">
-                        <p class="references__quote" id="references-quote">Michael really kept the team together with his great organization
-                            and clear communication. We wouldn't have got this far without his commitment.</p>
+                        <p class="references__quote" id="references-quote">Die Zusammenarbeit mit Nico war jederzeit
+                            professionell und unkompliziert. Im Verlauf des Projekts hat er die Koordination übernommen,
+                            Aufgaben strukturiert organisiert und die Kommunikation im Team verbessert. Dadurch konnten
+                            wir unser Kanbanboard erfolgreich und in hoher Qualität umsetzen.</p>
                         <div class="references__footer">
                             <span class="references__divider"></span>
-                            <p class="references__author" id="references-author">V. Schuster - Team Partner</p>
+                            <p class="references__author" id="references-author">Dominik Troendle - Team Partner</p>
                         </div>
                     </div>
                     <div class="references__profile">
-                        <img class="references__image" id="references-image" src="./assets/img/portrait.png" alt="">
+                        <div class="references__avatar">
+                            <img class="references__image" id="references-image" src="./assets/img/187118235.png"
+                                alt="">
+                        </div>
                         <span class="references__line"></span>
                     </div>
                 </div>
                 <div class="references__navigation">
-                    <button class="references__button" id="references-prev"><img class="references__button-arrow" src="./assets/icons/arrow_back.svg" alt=""></button>
+                    <button class="references__button" id="references-prev"><img class="references__button-arrow"
+                            src="./assets/icons/arrow_back.svg" alt=""></button>
                     <div class="references__dots">
                         <span class="references__dot references__dot-active">●</span>
                         <span class="references__dot">●</span>
-                        <span class="references__dot">●</span>
+                        <!-- <span class="references__dot">●</span> -->
                     </div>
-                    <button class="references__button" id="references-next"><img class="references__button-arrow" src="./assets/icons/arrow_forward.svg" alt=""></button>
+                    <button class="references__button" id="references-next"><img class="references__button-arrow"
+                            src="./assets/icons/arrow_forward.svg" alt=""></button>
                 </div>
             </section>
             <section class="contact" id="contact">
@@ -277,7 +296,7 @@
                             will add value to their projects through your work.</p>
                         <p class="contact__text">Need a Frontend developer? Contact me!</p>
                     </div>
-                    <form class="contact__form">
+                    <form class="contact__form" id="contact-form">
                         <div class="contact__group">
                             <div class="contact__field" id="field-name">
                                 <input class="contact__input" id="contact-name" type="text" placeholder="Your name">
@@ -310,14 +329,15 @@
                                     <input class="contact__checkbox" id="contact-policy" type="checkbox">
                                 </div>
                                 <p class="contact__privacy-text">I've read the <a class="contact__privacy-link"
-                                        href="./html/privacy-policy.html">privacy policy</a> and agree to the processing
+                                        href="./html/privacy-policy.html" target="_blank">privacy policy</a> and agree
+                                    to the processing
                                     of my data as
                                     outlined.</p>
                             </div>
                             <span class="contact__error-text d-none" id="error-policy">Please accept the
                                 privacy policy.</span>
                         </div>
-                        <button class="contact__button" id="submit-button">Send message :)</button>
+                        <button type="submit" class="contact__button" id="submit-button">Send message :)</button>
                     </form>
                 </div>
             </section>
@@ -326,7 +346,7 @@
     <footer class="footer">
         <div class="footer__info">
             <h2 class="footer__logo">N<span class="footer__logo-i">i</span>c<span class="footer__logo-o">o</span></h2>
-            <a class="footer__legal-link" href="./html/legal-notice.html">Legal Notice</a>
+            <a class="footer__legal-link" href="./html/legal-notice.html" target="_blank">Legal Notice</a>
         </div>
         <p class="footer__copyright">© Nico Reckert 2026</p>
         <div class="footer__social">
@@ -341,6 +361,12 @@
             </a>
         </div>
     </footer>
+    <div class="overlay d-none" id="overlay">
+        <div class="overlay__content">
+            <h3 id="overlay-title"></h3>
+            <p id="overlay-message"></p>
+        </div>
+    </div>
     <script type="module" src="main.js"></script>
 </body>
 
