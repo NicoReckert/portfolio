@@ -162,6 +162,7 @@
     box-sizing: border-box;
     margin: 0;
     font-family: 'Open-Sans', sans-serif;
+    scrollbar-width: thin;
 }
 
 html {
@@ -1178,7 +1179,7 @@ h2 {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    border: 1px solid var(--primary-2);
+    border: 1px solid var(--primary-1);
     border-radius: 10px;
     width: 617px;
     height: 50px;
@@ -1187,7 +1188,7 @@ h2 {
 
 .contact__field:hover,
 .contact__field:focus-within {
-    border: 1px solid var(--primary-1);
+    border: 1px solid var(--primary-2);
 }
 
 .contact__field--success::after {
@@ -1239,7 +1240,7 @@ h2 {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    border: 1px solid var(--primary-2);
+    border: 1px solid var(--primary-1);
     border-radius: 10px;
     width: 617px;
     height: 202px;
@@ -1247,7 +1248,7 @@ h2 {
 
 .contact__field-area:hover,
 .contact__field-area:focus-within {
-    border: 1px solid var(--primary-1);
+    border: 1px solid var(--primary-2);
 }
 
 .contact__field-area--success::after {
@@ -1276,6 +1277,7 @@ h2 {
     width: 100%;
     height: 100%;
     padding: 15px 25px;
+    padding-right: 75px;
     background-color: #141D2F;
     border-radius: 10px;
     color: white;
@@ -1334,7 +1336,7 @@ h2 {
     appearance: none;
     width: 18px;
     height: 18px;
-    border: 2px solid var(--primary-1);
+    border: 2px solid #70E61C;
     border-radius: 3px;
     background: transparent;
     cursor: pointer;
@@ -1346,7 +1348,7 @@ h2 {
 
 .contact__checkbox:checked::after {
     content: "✓";
-    color: var(--primary-1);
+    color: #70E61C;
     font-size: 18px;
 }
 
@@ -1362,6 +1364,7 @@ h2 {
     font-weight: 400;
     font-size: 23px;
     pointer-events: none;
+    border: none;
 }
 
 .contact__button--enabled {
@@ -1387,7 +1390,11 @@ h2 {
 }
 
 .is-success {
-    border: 1px solid var(--primary-1);
+    border: 1px solid var(--primary-2);
+}
+
+.is-success--checkbox {
+    border: 1px solid #70E61C;
 }
 
 .footer {

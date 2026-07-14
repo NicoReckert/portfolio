@@ -83,11 +83,11 @@ function validateCheckbox() {
     const errorText = document.getElementById('error-policy');
     if (!policyCheckbox.checked) {
         policyCheckbox.classList.add('is-error');
-        policyCheckbox.classList.remove('is-success');
+        policyCheckbox.classList.remove('is-success--checkbox');
         errorText.classList.remove('d-none');
         isPolicyValid = false;
     } else {
-        policyCheckbox.classList.add('is-success');
+        policyCheckbox.classList.add('is-success--checkbox');
         policyCheckbox.classList.remove('is-error');
         errorText.classList.add('d-none');
         isPolicyValid = true;
