@@ -48,13 +48,13 @@
                         <div class="hero__content">
                             <div class="hero__text">
                                 <div class="hero__heading">
-                                    <span class="hero__intro">I am</span>
+                                    <span class="hero__intro" id="hero-intro">I am</span>
                                     <div class="hero__title">
                                         <h1 class="hero__name">Nico Reckert</h1>
-                                        <p class="hero__role">FRONTEND DEVELOPER</p>
+                                        <p class="hero__role" id="hero-role">FRONTEND DEVELOPER</p>
                                     </div>
                                 </div>
-                                <a href="#contact" class="hero__button">Let's talk!</a>
+                                <a href="#contact" class="hero__button" id="hero-button">Let's talk!</a>
                             </div>
                         </div>
                     </div>
@@ -69,7 +69,7 @@
                             <a class="hero__email" href="mailto:n.r-86@gmx.de">n.r-86@gmx.de</a>
                         </div>
                         <div class="hero__scroll">
-                            <span class="hero__scroll-text">Scroll down</span>
+                            <span class="hero__scroll-text" id="hero-scroll-text">Scroll down</span>
                             <img class="hero__scroll-icon" src="./assets/icons/Vector(2).svg" alt="">
                         </div>
                     </div>
@@ -183,16 +183,22 @@
                 </ul>
                 <div class="skills__content">
                     <div class="skills__header">
-                        <h2 class="skills__title">My skills</h2>
+                        <h2 class="skills__title" id="skills-title">My skills</h2>
                         <span class="skills__line"></span>
                     </div>
-                    <p class="skills__text">Show that you have used a variety of front-end </p>
-                    <p class="skills__text"> technologies in your projects.</p><br>
-                    <p class="skills__highlight">Looking for <span class="skills__highlight-accent">another
-                            skill?</span></p><br>
-                    <p class="skills__text">Reveal enthusiasm for learning new technologies</p>
-                    <p class="skills__text">and frameworks.</p><br>
-                    <a href="#contact" class="skills__button">Get in touch</a>
+                    <div class="skills__body">
+                        <div class="skills__text-group">
+                            <p>
+                                <span class="skills__highlight" id="skills-highlight">Looking for</span>
+                                <span class="skills__highlight-accent" id="skills-highlight-accent">another
+                                    skill?</span>
+                            </p>
+                            <p class="skills__text" id="skills-text">I am always open to learning new technologies and
+                                frameworks.
+                            </p>
+                        </div>
+                        <a href="#contact" class="skills__button" id="skills-button">Get in touch</a>
+                    </div>
                 </div>
             </section>
             <section class="portfolio" id="portfolio">
@@ -256,10 +262,10 @@
             <section class="references">
                 <div class="references__item">
                     <div class="references__content">
-                        <p class="references__quote" id="references-quote">Die Zusammenarbeit mit Nico war jederzeit
-                            professionell und unkompliziert. Im Verlauf des Projekts hat er die Koordination übernommen,
-                            Aufgaben strukturiert organisiert und die Kommunikation im Team verbessert. Dadurch konnten
-                            wir unser Kanbanboard erfolgreich und in hoher Qualität umsetzen.</p>
+                        <p class="references__quote" id="references-quote">Working with Nico was always professional and
+                            straightforward. Throughout the project, he took charge of coordination, organised tasks in
+                            a structured manner and improved communication within the team. This enabled us to
+                            successfully implement our Kanban board to a high standard.</p>
                         <div class="references__footer">
                             <span class="references__divider"></span>
                             <p class="references__author" id="references-author">Dominik Troendle - Team Partner</p>
