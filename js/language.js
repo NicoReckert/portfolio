@@ -22,7 +22,9 @@ export function initLanguage() {
 }
 
 function changeLanguage() {
+    const currentLanguage = getCurrentLanguage();
     const language = languages[getCurrentLanguage()];
+    dom.htmlRoot.lang = currentLanguage;
     dom.headerLinks.forEach((link, index) => {
         if (language.header.links[index]) {
             link.textContent = language.header.links[index];
@@ -42,6 +44,35 @@ function changeLanguage() {
     dom.skillsHighlightAccent.textContent = language.skills.highlightAccent;
     dom.skillsText.textContent = language.skills.text;
     dom.skillsButton.textContent = language.skills.button;
+    dom.portfolioText.textContent = language.portfolio.text;
+    dom.portfolioDescriptions.forEach((description, index) => {
+        if (language.portfolio.projectDescription[index]) {
+            description.textContent = language.portfolio.projectDescription[index];
+        }
+    });
+    dom.contactTitle.textContent = language.contact.title;
+    dom.contactSubtitle.textContent = language.contact.subtitle;
+    dom.contactTexts.forEach((text, index) => {
+        if (language.contact.text[index]) {
+            text.textContent = language.contact.text[index];
+        }
+    });
+    dom.contactName.placeholder = language.contact.name;
+    dom.contactErrorName.textContent = language.contact.errorName;
+    dom.contactEmail.placeholder = language.contact.email;
+    dom.contactErrorEmailRequired.textContent = language.contact.errorEmailRequired;
+    dom.contactErrorEmailFormat.textContent = language.contact.errorEmailFormat;
+    dom.contactMessage.placeholder = language.contact.message;
+    dom.contactErrorMessage.textContent = language.contact.errorMessage;
+    dom.contactPrivacyTexts.forEach((text, index) => {
+        if (language.contact.privacyText[index]) {
+            text.textContent = language.contact.privacyText[index];
+        }
+    });
+    dom.contactPrivacyLink.textContent = language.contact.privacyLink;
+    dom.contactErrorPolicy.textContent = language.contact.errorPolicy;
+    dom.contactSubmitButton.textContent = language.contact.button;
+    dom.footerLegalLink.textContent = language.footer.legalLink;
 }
 
 function setLanguageGerman() {

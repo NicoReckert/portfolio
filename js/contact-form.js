@@ -28,7 +28,7 @@ export function initContactForm() {
 function validateName() {
     const nameInput = document.getElementById('contact-name');
     const nameField = document.getElementById('field-name');
-    const errorText = document.getElementById('error-name');
+    const errorText = document.getElementById('contact-error-name');
     if (nameInput.value.trim().length < 2) {
         nameField.classList.add('is-error', 'contact__field--error');
         nameField.classList.remove('is-success', 'contact__field--success');
@@ -46,8 +46,8 @@ function validateName() {
 function validateEmail() {
     const emailInput = document.getElementById('contact-email');
     const emailField = document.getElementById('field-email');
-    const errorRequired = document.getElementById('error-email-required');
-    const errorFormat = document.getElementById('error-email-format');
+    const errorRequired = document.getElementById('contact-error-email-required');
+    const errorFormat = document.getElementById('contact-error-email-format');
     const value = emailInput.value.trim();
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     errorRequired.classList.add('d-none');
@@ -71,7 +71,7 @@ function validateEmail() {
 function validateMessage() {
     const messageTextarea = document.getElementById('contact-message');
     const messageField = document.getElementById('field-message');
-    const errorText = document.getElementById('error-message');
+    const errorText = document.getElementById('contact-error-message');
     if (messageTextarea.value.trim() === "") {
         messageField.classList.add('is-error', 'contact__field-area--error');
         messageField.classList.remove('is-success', 'contact__field-area--success');
@@ -88,7 +88,7 @@ function validateMessage() {
 
 function validateCheckbox() {
     const policyCheckbox = document.getElementById('contact-policy');
-    const errorText = document.getElementById('error-policy');
+    const errorText = document.getElementById('contact-error-policy');
     if (!policyCheckbox.checked) {
         policyCheckbox.classList.add('is-error');
         policyCheckbox.classList.remove('is-success--checkbox');

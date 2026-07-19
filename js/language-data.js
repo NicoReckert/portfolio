@@ -30,6 +30,41 @@ export const de = {
         highlightAccent: 'eine andere Technologie?',
         text: 'Ich bin stets offen dafür, neue Technologien und Frameworks zu erlernen.',
         button: 'Kontaktieren Sie mich'
+    },
+    portfolio: {
+        text: "Entdecke eine Auswahl meiner Projekte und überzeuge dich selbst von meinen Fähigkeiten.",
+        projectDescription: [
+            'Ein vom Kanban-System inspirierter Aufgabenmanager. Erstelle und organisiere Aufgaben per Drag & Drop und weise ihnen Benutzer und Kategorien zu.',
+            `Rise of El Brünö ist ein 2D-Action-Jump-and-Run, das mit einem objektorientierten Ansatz entwickelt wurde. Begleite einen mexikanischen Bauern auf seiner Reise,
+             um seine entführten tierischen Gefährten zu retten. Kämpfe gegen mutierte Kreaturen, überwinde gefährliche Hindernisse und entdecke die Kraft von Freundschaft, Mut und alten Legenden`,
+            'Eine vollständig interaktive Pokédex-Anwendung auf Basis der PokéAPI. Entdecke Pokémon mit detaillierten Informationen zu Typen, Statuswerten und Entwicklungsketten über eine dynamische und benutzerfreundliche Oberfläche.'
+        ]
+    },
+    contact: {
+        title: 'Kontakt',
+        subtitle: 'Eine Herausforderung zu lösen?',
+        text: [
+            `Ich freue mich darauf, von Ihnen zu hören und meine Fähigkeiten als Frontend Developer in spannende Projekte einzubringen. Mein Ziel ist es, digitale Lösungen zu entwickeln,
+             die technisch überzeugen, ansprechend gestaltet sind und eine intuitive Nutzererfahrung bieten.`,
+            'Sie suchen einen Frontend Developer? Kontaktieren Sie mich!'
+        ],
+        name: 'Ihr Name',
+        errorName: 'Bitte geben Sie Ihren Namen ein.',
+        email: 'Ihre E-Mail-Adresse',
+        errorEmailRequired: 'Bitte geben Sie Ihre E-Mail-Adresse ein.',
+        errorEmailFormat: 'Bitte geben Sie eine gültige E-Mail-Adresse ein.',
+        message: 'Ihre Nachricht',
+        errorMessage: 'Bitte geben Sie eine Nachricht ein.',
+        privacyText: [
+            "Ich habe die",
+            "gelesen und stimme der Verarbeitung meiner Daten gemäß den dort beschriebenen Bedingungen zu."
+        ],
+        privacyLink: 'Datenschutzerklärung',
+        errorPolicy: 'Bitte stimmen Sie der Datenschutzerklärung zu.',
+        button: 'Nachricht senden :)',
+    },
+    footer: {
+        legalLink: 'Impressum'
     }
 };
 
@@ -64,5 +99,40 @@ export const en = {
         highlightAccent: 'another technology?',
         text: 'I am always open to learning new technologies and frameworks.',
         button: 'Get in touch'
+    },
+    portfolio: {
+        text: "Explore a selection of my projects and see my skills for yourself.",
+        projectDescription: [
+            'Task mandger inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
+            `Rise of El Brünö is a 2D action jump-and-run game built with an object-oriented approach. Follow a Mexican farmer on his journey to rescue his kidnapped animal companions.
+             Fight mutated creatures, overcome challenging obstacles, and uncover the power of friendship, courage, and ancient legends.`,
+            'A fully interactive Pokédex application built with the PokéAPI. Explore Pokémon with detailed information about their types, stats, and evolution chains through a dynamic and user-friendly interface.'
+        ]
+    },
+    contact: {
+        title: 'Contact',
+        subtitle: 'Got a problem to solve?',
+        text: [
+            `I look forward to hearing from you and bringing my skills as a Frontend Developer to exciting projects. My goal is to create digital solutions that are technically strong,
+             visually appealing, and provide an intuitive user experience.`,
+            'Need a Frontend developer? Contact me!'
+        ],
+        name: 'Your name',
+        errorName: 'Your name is required.',
+        email: 'Your email',
+        errorEmailRequired: 'Your email is required.',
+        errorEmailFormat: 'Please enter a valid email address.',
+        message: 'Your message',
+        errorMessage: 'Your message is empty.',
+        privacyText: [
+            "I've read the",
+            "and agree to the processing of my data asoutlined."
+        ],
+        privacyLink: 'privacy policy',
+        errorPolicy: 'Please accept the privacy policy.',
+        button: 'Send message :)'
+    },
+    footer: {
+        legalLink: 'Legal Notice'
     }
-};
+}

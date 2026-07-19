@@ -1689,3 +1689,131 @@ h2 {
     position: relative;
     z-index: 10;
 } */
+
+/* .background {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    z-index: -1;
+    background: #05070a;
+}
+
+ .grid {
+    position: absolute;
+    inset: -100px;
+
+    background-image:
+        linear-gradient(
+            rgba(0,217,255,.08) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(0,217,255,.08) 1px,
+            transparent 1px
+        );
+
+    background-size: 60px 60px;
+
+    transition: transform .2s ease-out;
+
+    animation: gridMove 25s linear infinite;
+}
+
+
+@keyframes gridMove {
+    to {
+        background-position: 60px 60px;
+    }
+} 
+
+
+ @keyframes gridMove {
+    to {
+        transform: translate(60px,60px);
+    }
+}
+
+.nodes span {
+    position: absolute;
+
+    width: 5px;
+    height: 5px;
+
+    background: #00ffff;
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 10px #00ffff,
+        0 0 30px #009dff;
+
+    animation: pulse 3s infinite;
+}
+
+
+.nodes span:nth-child(1) {
+    top:20%;
+    left:15%;
+}
+
+.nodes span:nth-child(2) {
+    top:60%;
+    left:70%;
+    animation-delay:1s;
+}
+
+.nodes span:nth-child(3) {
+    top:35%;
+    left:85%;
+    animation-delay:2s;
+}
+
+.nodes span:nth-child(4) {
+    top:75%;
+    left:25%;
+    animation-delay:.5s;
+}
+
+.nodes span:nth-child(5) {
+    top:45%;
+    left:45%;
+    animation-delay:1.5s;
+}
+
+
+@keyframes pulse {
+    0%,100% {
+        opacity:.3;
+        transform:scale(1);
+    }
+
+    50% {
+        opacity:1;
+        transform:scale(1.8);
+    }
+}
+
+.scanline {
+    position:absolute;
+
+    left:0;
+    top:-20%;
+
+    width:100%;
+    height:150px;
+
+    background: linear-gradient(
+        transparent,
+        rgba(0,217,255,.08),
+        transparent
+    );
+
+    animation: scan 8s linear infinite;
+}
+
+
+@keyframes scan {
+    to {
+        transform:translateY(900px);
+    }
+}  */
