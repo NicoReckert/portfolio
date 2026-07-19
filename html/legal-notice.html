@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legal Notice</title>
+    <title></title>
     <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg">
     <link rel="stylesheet" href="../css/legal-notice.css">
     <link rel="stylesheet" href="../css/font.css">
@@ -13,129 +13,81 @@
 <body>
     <div class="all-content">
         <div class="content">
-
-            <!-- HEADER -->
             <header class="header">
-                <a href="../index.html" class="header__logo">
-                    N<span class="header__logo-i">i</span>c<span class="header__logo-o">o</span>
-                </a>
-
+                <div class="header__brand">
+                    <a class="header__back-link" href="../index.html"><img class="header__back-link-arrow"
+                            src="../assets/icons/arrow_back.svg" alt=""></a>
+                    <span class="header__logo">
+                        N<span class="header__logo-i">i</span>c<span class="header__logo-o">o</span>
+                    </span>
+                </div>
                 <nav class="header__nav">
                     <div class="header__language-switcher">
-                        <button class="header__language-button" id="german-button"
-                            onclick="setLanguageGerman()">DE</button>
+                        <button class="header__language-button" id="german-button">DE</button>
 
-                        <button class="header__language-button header__language-button--active" id="english-button"
-                            onclick="setLanguageEnglish()">EN</button>
+                        <button class="header__language-button header__language-button--active"
+                            id="english-button">EN</button>
                     </div>
                 </nav>
             </header>
-
-            <!-- MAIN -->
             <main>
-                <h1>Legal Notice</h1>
-
+                <h1 class="legal__title"></h1>
                 <section>
-                    <h2>Imprint</h2>
+                    <h2 class="legal__section-title"></h2>
                     <p>
-                        Nico Reckert<br />
-                        Am Park 4<br />
-                        39326 Zielitz
+                        Nico Reckert<br>
+                        Am Park 4<br>
+                        39326 Zielitz<br>
+                        <span class="legal__text"></span>
                     </p>
-
                     <p>
-                        Phone: +49 17672751091<br />
                         E-Mail: n.r-86@gmx.de
                     </p>
                 </section>
                 <section>
-                    <h2>Disclaimer</h2>
-
-                    <h3>Liability for content</h3>
+                    <h2 class="legal__section-title"></h2>
+                    <p class="legal__text"></p>
                     <p>
-                        The contents of our pages were created with the greatest care. However, we cannot guarantee
-                        that the content is correct, complete or up-to-date.
+                        Nico Reckert<br>
+                        <span class="legal__text"></span>
                     </p>
-
+                </section>
+                <section>
+                    <h2 class="legal__section-title"></h2>
+                    <p class="legal__text"></p>
+                    <p class="legal__text"></p>
+                    <p class="legal__text"></p>
+                    <p class="legal__text"></p>
+                </section>
+                <section>
+                    <h2 class="legal__section-title"></h2>
+                    <p class="legal__text"></p>
+                    <p class="legal__text"></p>
+                    <p class="legal__text"></p>
                     <p>
-                        As a service provider, we are responsible for our own content on these pages in accordance with
-                        general laws according to Section 7 Paragraph 1 DDG.
+                        <span class="legal__text"></span>
+                        <a class="legal__link" href="privacy-policy.html"></a>.
                     </p>
-
+                </section>
+                <section>
+                    <h2 class="legal__section-title"></h2>
+                    <p class="legal__text"></p>
+                    <p class="legal__text"></p>
+                </section>
+                <section>
+                    <h2 class="legal__section-title"></h2>
                     <p>
-                        However, according to Sections 8 to 10 DDG, we are not obliged to monitor transmitted or stored
-                        third-party information or to investigate circumstances that indicate illegal activity.
-                    </p>
-
-                    <p>
-                        Obligations to remove or block the use of information remain unaffected. Liability is only
-                        possible from the time of knowledge of a specific infringement.
-                    </p>
-
-                    <p>
-                        If we become aware of legal violations, we will remove the content immediately.
-                    </p>
-
-                    <h3>Copyright</h3>
-                    <p>
-                        The content and works on these pages created by the site operators are subject to German
-                        copyright law.
-                    </p>
-
-                    <p>
-                        Reproduction, processing, distribution and any kind of exploitation outside the limits of
-                        copyright law require written consent.
-                    </p>
-
-                    <p>
-                        Downloads and copies are only permitted for private, non-commercial use.
-                    </p>
-
-                    <p>
-                        Third-party content is marked as such. If you notice any copyright infringement, please inform
-                        us.
-                    </p>
-
-                    <p>
-                        We will remove such content immediately upon becoming aware of any violations.
-                    </p>
-
-                    <h3>Data protection</h3>
-                    <p>
-                        The use of this website is generally possible without providing personal data.
-                    </p>
-
-                    <p>
-                        Where personal data is collected (e.g. name or email address), this is always done on a
-                        voluntary basis.
-                    </p>
-
-                    <p>
-                        Data will not be shared with third parties without consent.
-                    </p>
-
-                    <p>
-                        We point out that data transmission over the Internet may have security vulnerabilities.
-                        Complete protection is not possible.
-                    </p>
-
-                    <p>
-                        The use of contact data published within the imprint for unsolicited advertising is prohibited.
-                    </p>
-
-                    <p>
-                        Legal action may be taken in case of spam or unauthorized advertising.
+                        <span class="legal__text"></span>
+                        <a class="legal__link" href="privacy-policy.html"></a>.
                     </p>
                 </section>
             </main>
-
-            <!-- FOOTER -->
             <footer class="footer">
                 <p class="footer__copyright">© Nico Reckert 2026</p>
             </footer>
-
         </div>
     </div>
+    <script type="module" src="../js/legal-main.js"></script>
 </body>
 
 </html>

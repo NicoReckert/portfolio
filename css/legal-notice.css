@@ -5,10 +5,6 @@
     --text-color: #FFFFFF;
 }
 
-/* =========================
-   RESET
-========================= */
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -24,10 +20,6 @@ body {
     flex-direction: column;
 }
 
-/* =========================
-   LAYOUT WRAPPERS
-========================= */
-
 .all-content {
     display: flex;
     flex-direction: column;
@@ -42,17 +34,48 @@ body {
     flex: 1;
 }
 
-/* =========================
-   HEADER
-========================= */
-
 .header {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 37px 100px;
     background-color: var(--bg-color);
     width: 100%;
+    z-index: 2;
+}
+
+.header__brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.header__back-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.header__back-link:hover {
+    border: 2px solid var(--primary-2);
+}
+
+.header__back-link:active {
+    border: none
+}
+
+.header__back-link-arrow {
+    width: 21px;
+    height: 21px;
+    object-fit: cover;
 }
 
 .header__logo,
@@ -94,78 +117,92 @@ h2 {
     color: transparent;
 }
 
-/* =========================
-   LANGUAGE SWITCH
-========================= */
-
 .header__language-switcher {
     display: flex;
     gap: 14px;
 }
 
 .header__language-button {
-    padding: 5px 10px;
     border-radius: 10px;
+    padding: 5px 8px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: 'Poppins-Regular';
+    font-weight: 400;
+    background-color: #141D2F;
     border: 1px solid var(--primary-1);
-    background: transparent;
-    color: white;
-    font-size: 16px;
     cursor: pointer;
-    transition: 0.2s ease;
+    letter-spacing: 0%;
+    line-height: 120%;
+    min-width: 40px;
 }
 
 .header__language-button:hover {
-    border-color: var(--primary-2);
-    color: var(--primary-2);
+    background-color: var(--primary-2);
+    border: none;
 }
 
 .header__language-button--active {
-    background: var(--primary-1);
+    background-color: var(--primary-1);
     border: none;
     pointer-events: none;
+    font-family: 'Poppins-Bold';
+    font-weight: bold;
 }
-
-/* =========================
-   MAIN CONTENT
-========================= */
 
 main {
     max-width: 900px;
     margin: 0 auto;
     padding: 80px 100px;
     flex: 1;
+    padding-top: 126px;
 }
 
-/* TITLE */
 h1 {
     font-family: 'Poppins-Bold';
     font-size: 64px;
     margin-bottom: 60px;
 }
 
-/* =========================
-   SECTIONS + ANIMATION
-========================= */
-
 section {
     margin-bottom: 40px;
     padding-bottom: 20px;
-    border-bottom: 1px solid rgba(0, 190, 232, 0.15);
-
     opacity: 0;
     transform: translateY(20px);
     animation: fadeUp 0.8s ease forwards;
 }
 
-/* stagger animation */
-section:nth-of-type(1) { animation-delay: 0.1s; }
-section:nth-of-type(2) { animation-delay: 0.2s; }
-section:nth-of-type(3) { animation-delay: 0.3s; }
-section:nth-of-type(4) { animation-delay: 0.4s; }
-section:nth-of-type(5) { animation-delay: 0.5s; }
-section:nth-of-type(6) { animation-delay: 0.6s; }
-section:nth-of-type(7) { animation-delay: 0.7s; }
-section:nth-of-type(8) { animation-delay: 0.8s; }
+section:nth-of-type(1) {
+    animation-delay: 0.1s;
+}
+
+section:nth-of-type(2) {
+    animation-delay: 0.2s;
+}
+
+section:nth-of-type(3) {
+    animation-delay: 0.3s;
+}
+
+section:nth-of-type(4) {
+    animation-delay: 0.4s;
+}
+
+section:nth-of-type(5) {
+    animation-delay: 0.5s;
+}
+
+section:nth-of-type(6) {
+    animation-delay: 0.6s;
+}
+
+section:nth-of-type(7) {
+    animation-delay: 0.7s;
+}
+
+section:nth-of-type(8) {
+    animation-delay: 0.8s;
+}
 
 @keyframes fadeUp {
     to {
@@ -173,10 +210,6 @@ section:nth-of-type(8) { animation-delay: 0.8s; }
         transform: translateY(0);
     }
 }
-
-/* =========================
-   TYPOGRAPHY
-========================= */
 
 h2 {
     font-family: 'Poppins-Bold';
@@ -199,34 +232,11 @@ p {
     margin-bottom: 12px;
 }
 
-ul {
-    margin: 10px 0 20px 20px;
-}
-
-li {
-    margin-bottom: 8px;
-    color: rgba(255, 255, 255, 0.85);
-}
-
-strong {
-    color: var(--primary-2);
-    font-family: 'Poppins-Bold';
-}
-
-/* LINKS */
 a {
     color: var(--primary-2);
     text-decoration: none;
     transition: 0.2s ease;
 }
-
-/* a:hover {
-    color: var(--primary-1);
-} */
-
-/* =========================
-   FOOTER
-========================= */
 
 .footer {
     display: flex;
@@ -241,10 +251,6 @@ a {
     font-size: 16px;
     color: rgba(255, 255, 255, 0.8);
 }
-
-/* =========================
-   RESPONSIVE
-========================= */
 
 @media (max-width: 768px) {
     .header {

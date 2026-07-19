@@ -23,7 +23,7 @@ export function initLanguage() {
 
 function changeLanguage() {
     const currentLanguage = getCurrentLanguage();
-    const language = languages[getCurrentLanguage()];
+    const language = languages[currentLanguage];
     dom.htmlRoot.lang = currentLanguage;
     dom.headerLinks.forEach((link, index) => {
         if (language.header.links[index]) {
