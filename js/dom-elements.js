@@ -41,3 +41,16 @@ export const dom = {
     contactSubmitButton: document.getElementById('submit-button'),
     footerLegalLink: document.getElementById('footer-legal-link')
 }
+
+export function initDom() {
+    dom.headerLinks.forEach(link => {
+        link.addEventListener('click', setActiveHeaderLink);
+    });
+}
+
+function setActiveHeaderLink(event) {
+    dom.headerLinks.forEach(link => {
+        link.classList.remove('header__link--active');
+    });
+    event.currentTarget.classList.add('header__link--active');
+}
