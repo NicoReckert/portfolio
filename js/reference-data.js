@@ -9,12 +9,7 @@ export const references = {
             text: "Nico hat im Projekt viel Verantwortung übernommen und den Überblick über die gemeinsamen Aufgaben behalten. Seine strukturierte Arbeitsweise und offene Kommunikation haben die Zusammenarbeit im Team deutlich erleichtert. Ich habe die Zusammenarbeit als sehr angenehm und produktiv erlebt.",
             author: "Kevin Breiter - Teampartner",
             portraitSrc: "./assets/img/Profilbild-Portfolio.png"
-        },
-        // {
-        //     text: "Michael consistently delivered high-quality work and always found practical solutions, even under tight deadlines. I highly recommend working with him.",
-        //     author: "A. Williams - Client",
-        //     portraitSrc: "./assets/img/portrait.png"
-        // }
+        }
     ],
 
     en: [
@@ -27,11 +22,6 @@ export const references = {
             text: "Nico took on a great deal of responsibility within the project and kept track of the shared tasks. His structured approach to work and open communication made working together as a team much easier. I found working with him to be a very pleasant and productive experience.",
             author: "Kevin Breiter - Team Partner",
             portraitSrc: "./assets/img/Profilbild-Portfolio.png"
-        },
-        // {
-        //     text: "Michael consistently delivered high-quality work and always found practical solutions, even under tight deadlines. I highly recommend working with him.",
-        //     author: "A. Williams - Client",
-        //     portraitSrc: "./assets/img/portrait.png"
-        // }
+        }
     ]
 };

@@ -2,7 +2,9 @@ export const de = {
     header: {
         links: [
             "Über mich",
-            "Fähigkeiten"
+            "Fähigkeiten",
+            "Portfolio",
+            "Kontakt"
         ]
     },
     hero: {
@@ -72,7 +74,9 @@ export const en = {
     header: {
         links: [
             "About me",
-            "Skills"
+            "Skills",
+            "Portfolio",
+            "Contact"
         ]
     },
     hero: {

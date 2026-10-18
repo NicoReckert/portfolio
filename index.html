@@ -46,8 +46,11 @@
                             <button class="header__language-button header__language-button--active"
                                 id="english-button">EN</button>
                         </div>
-                        <button class="header__menu-button"><img class="header__menu-icon"
-                                src="./assets/icons/Property 1=burger.svg" alt=""></button>
+                        <button class="header__menu-button" id="header-menu-button">
+                            <span class="header__menu-line"></span>
+                            <span class="header__menu-line"></span>
+                            <span class="header__menu-line"></span>
+                        </button>
                     </nav>
                 </div>
             </header>
@@ -252,22 +255,24 @@
                 </div>
             </section>
             <section class="references">
-                <div class="references__item">
-                    <img class="references__quote-icon" src="./assets/img/quote-mark.svg" alt="">
-                    <div class="references__content">
-                        <p class="references__quote" id="references-quote"></p>
-                        <div class="references__footer">
-                            <span class="references__divider"></span>
-                            <p class="references__author" id="references-author"></p>
+                <div class="references__container">
+                    <div class="references__item">
+                        <img class="references__quote-icon" src="./assets/img/quote-mark.svg" alt="">
+                        <div class="references__content">
+                            <p class="references__quote" id="references-quote"></p>
+                            <div class="references__footer">
+                                <span class="references__divider"></span>
+                                <p class="references__author" id="references-author"></p>
+                            </div>
+                        </div>
+                        <div class="references__profile">
+                            <div class="references__avatar">
+                                <img class="references__image" id="references-image" src="./assets/img/187118235.png"
+                                    alt="">
+                            </div>
                         </div>
                     </div>
-                    <div class="references__profile">
-                        <div class="references__avatar">
-                            <img class="references__image" id="references-image" src="./assets/img/187118235.png"
-                                alt="">
-                        </div>
-                        <span class="references__line"></span>
-                    </div>
+                    <span class="references__line"></span>
                 </div>
                 <div class="references__navigation">
                     <button class="references__button" id="references-prev"><img class="references__button-arrow"
@@ -275,7 +280,6 @@
                     <div class="references__dots">
                         <span class="references__dot references__dot-active">●</span>
                         <span class="references__dot">●</span>
-                        <!-- <span class="references__dot">●</span> -->
                     </div>
                     <button class="references__button" id="references-next"><img class="references__button-arrow"
                             src="./assets/icons/arrow_forward.svg" alt=""></button>
@@ -286,59 +290,62 @@
                     <span class="contact__line"></span>
                     <h2 class="contact__title" id="contact-title"></h2>
                 </div>
-                <div class="contact__content">
-                    <div class="contact__info">
-                        <h3 class="contact__subtitle" id="contact-subtitle"></h3>
-                        <p class="contact__text"></p>
-                        <p class="contact__text"></p>
-                    </div>
-                    <div class="contact__form-wrapper">
-                        <form class="contact__form" id="contact-form">
-                            <div class="contact__group">
-                                <div class="contact__field" id="field-name">
-                                    <input class="contact__input" id="contact-name" type="text" placeholder="Your name">
-                                </div>
-                                <span class="contact__error-text d-none" id="contact-error-name"></span>
-                            </div>
-                            <div class="contact__group">
-                                <div class="contact__field" id="field-email">
-                                    <input class="contact__input" id="contact-email" type="email" autocomplete="email"
-                                        placeholder="Your email">
-                                </div>
-                                <span class="contact__error-text d-none" id="contact-error-email-required"></span>
-                                <span class="contact__error-text d-none" id="contact-error-email-format"></span>
-                            </div>
-                            <div class="contact__group">
-                                <div class="contact__field-area" id="field-message">
-                                    <textarea class="contact__textarea" id="contact-message"
-                                        placeholder="Your message"></textarea>
-                                </div>
-                                <span class="contact__error-text d-none" id="contact-error-message"></span>
-                            </div>
-                            <div class="contact__group">
-                                <div class="contact__privacy">
-                                    <div class="contact__checkbox-wrapper">
-                                        <input class="contact__checkbox" id="contact-policy" type="checkbox">
+                <div class="contact__container">
+                    <div class="contact__content">
+                        <div class="contact__info">
+                            <h3 class="contact__subtitle" id="contact-subtitle"></h3>
+                            <p class="contact__text"></p>
+                            <p class="contact__text"></p>
+                        </div>
+                        <div class="contact__form-wrapper">
+                            <form class="contact__form" id="contact-form">
+                                <div class="contact__group">
+                                    <div class="contact__field" id="field-name">
+                                        <input class="contact__input" id="contact-name" type="text"
+                                            placeholder="Your name">
                                     </div>
-                                    <p>
-                                        <span class="contact__privacy-text"></span>
-                                        <a class="contact__privacy-link" id="contact-privacy-link"
-                                            href="./html/privacy-policy.html"></a>
-                                        <span class="contact__privacy-text"></span>
-                                    </p>
+                                    <span class="contact__error-text d-none" id="contact-error-name"></span>
                                 </div>
-                                <span class="contact__error-text d-none" id="contact-error-policy"></span>
-                            </div>
-                            <button type="submit" class="contact__button" id="submit-button"></button>
-                        </form>
-                        <a class="contact__back-to-top" href="#body"><svg class="contact__back-to-top-icon" width="15"
-                                height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M6.36385 3.41369L1.70685 8.07069C1.31638 8.46116 0.683311 8.46116 0.292846 8.07069C-0.0976193 7.68023 -0.0976183 7.04716 0.292847 6.65669L6.65674 0.292799C7.04727 -0.0977256 7.68043 -0.0977246 8.07095 0.292799L14.4348 6.65669C14.8253 7.04716 14.8253 7.68023 14.4348 8.07069C14.0444 8.46116 13.4113 8.46116 13.0208 8.07069L8.36385 3.41369L8.36385 14.5857C8.36385 15.138 7.91613 15.5857 7.36385 15.5857C6.81156 15.5857 6.36385 15.138 6.36385 14.5857L6.36385 3.41369Z"
-                                    fill="currentColor" />
-                            </svg></a>
+                                <div class="contact__group">
+                                    <div class="contact__field" id="field-email">
+                                        <input class="contact__input" id="contact-email" type="email"
+                                            autocomplete="email" placeholder="Your email">
+                                    </div>
+                                    <span class="contact__error-text d-none" id="contact-error-email-required"></span>
+                                    <span class="contact__error-text d-none" id="contact-error-email-format"></span>
+                                </div>
+                                <div class="contact__group">
+                                    <div class="contact__field-area" id="field-message">
+                                        <textarea class="contact__textarea" id="contact-message"
+                                            placeholder="Your message"></textarea>
+                                    </div>
+                                    <span class="contact__error-text d-none" id="contact-error-message"></span>
+                                </div>
+                                <div class="contact__group">
+                                    <div class="contact__privacy">
+                                        <div class="contact__checkbox-wrapper">
+                                            <input class="contact__checkbox" id="contact-policy" type="checkbox">
+                                        </div>
+                                        <p>
+                                            <span class="contact__privacy-text"></span>
+                                            <a class="contact__privacy-link" id="contact-privacy-link"
+                                                href="./html/privacy-policy.html"></a>
+                                            <span class="contact__privacy-text"></span>
+                                        </p>
+                                    </div>
+                                    <span class="contact__error-text d-none" id="contact-error-policy"></span>
+                                </div>
+                                <button type="submit" class="contact__button" id="submit-button"></button>
+                            </form>
+                            <a class="contact__back-to-top" href="#body"><svg class="contact__back-to-top-icon"
+                                    width="15" height="16" viewBox="0 0 15 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.36385 3.41369L1.70685 8.07069C1.31638 8.46116 0.683311 8.46116 0.292846 8.07069C-0.0976193 7.68023 -0.0976183 7.04716 0.292847 6.65669L6.65674 0.292799C7.04727 -0.0977256 7.68043 -0.0977246 8.07095 0.292799L14.4348 6.65669C14.8253 7.04716 14.8253 7.68023 14.4348 8.07069C14.0444 8.46116 13.4113 8.46116 13.0208 8.07069L8.36385 3.41369L8.36385 14.5857C8.36385 15.138 7.91613 15.5857 7.36385 15.5857C6.81156 15.5857 6.36385 15.138 6.36385 14.5857L6.36385 3.41369Z"
+                                        fill="currentColor" />
+                                </svg></a>
+                        </div>
                     </div>
-
                 </div>
             </section>
         </div>
@@ -365,6 +372,20 @@
         <div class="overlay__content">
             <h3 id="overlay-title"></h3>
             <p id="overlay-message"></p>
+        </div>
+    </div>
+    <div class="mobile__overlay" id="mobile-overlay">
+        <div class="mobile__overlay-links">
+            <a class="mobile__overlay-link" href="#about">About me</a>
+            <a class="mobile__overlay-link" href="#skills">My skills</a>
+            <a class="mobile__overlay-link" href="#portfolio">Portfolio</a>
+            <a class="mobile__overlay-link" href="#contact">Contact</a>
+            <div class="mobile__overlay-language-switcher">
+                <button class="mobile__overlay-language-button mobile__overlay-language-button--active"
+                    id="overlay-english-button">EN</button>
+                <span class="mobile__overlay-language-divider">/</span>
+                <button class="mobile__overlay-language-button" id="overlay-german-button">DE</button>
+            </div>
         </div>
     </div>
     <script type="module" src="main.js"></script>
