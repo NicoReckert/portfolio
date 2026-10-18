@@ -1,0 +1,202 @@
+.header {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #141D2F;
+    width: 100%;
+    z-index: 5;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    padding: 37px 100px;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 92px;
+}
+
+.header__logo,
+h2 {
+    color: white;
+    font-size: 35px;
+    font-family: 'Poppins-Bold';
+    font-weight: bold;
+}
+
+.header__logo-i {
+    display: inline-block;
+    color: white;
+    font-family: 'Poppins-Bold';
+    font-weight: bold;
+    font-size: 35px;
+    background: linear-gradient(to bottom,
+            var(--primary-2) 0 35%,
+            white 35% 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.header__logo-o {
+    display: inline-block;
+    color: white;
+    font-family: 'Poppins-Bold';
+    font-weight: bold;
+    font-size: 35px;
+    background: linear-gradient(to right,
+            white 0 50%,
+            var(--primary-1) 50% 100%);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.header__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 29px;
+}
+
+.header__link {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    font-family: 'Poppins-Regular';
+    font-weight: 400;
+    letter-spacing: 0%;
+    line-height: 120%;
+    transition: all ease-in-out 125ms;
+}
+
+.header__link--active {
+    color: var(--primary-2);
+}
+
+.header__link--active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 55.5px;
+    height: 2px;
+    background: var(--primary-1);
+}
+
+.header__link:hover {
+    color: var(--primary-2);
+}
+
+.header__language-switcher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
+.header__language-button {
+    border-radius: 10px;
+    padding: 5px 8px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: 'Poppins-Regular';
+    font-weight: 400;
+    background-color: #141D2F;
+    border: 1px solid var(--primary-1);
+    cursor: pointer;
+    letter-spacing: 0%;
+    line-height: 120%;
+    min-width: 40px;
+}
+
+.header__language-button:hover {
+    background-color: var(--primary-2);
+    border: none;
+}
+
+.header__language-button--active {
+    background-color: var(--primary-1);
+    border: none;
+    pointer-events: none;
+    font-family: 'Poppins-Bold';
+    font-weight: bold;
+}
+
+.header__menu-button {
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.header__menu-line {
+    position: absolute;
+    display: block;
+    width: 28px;
+    height: 2px;
+    flex-shrink: 0;
+    background-color: white;
+    border-radius: 2px;
+    transition: transform 250ms ease, opacity 200ms ease;
+}
+
+.header__menu-line:first-child {
+    transform: translateY(-10px);
+}
+
+.header__menu-line:nth-child(2) {
+    transform: translateY(0);
+}
+
+.header__menu-line:last-child {
+    transform: translateY(10px);
+}
+
+.header__menu-button--active .header__menu-line:first-child {
+    transform: rotate(45deg);
+}
+
+.header__menu-button--active .header__menu-line:nth-child(2) {
+    opacity: 0;
+}
+
+.header__menu-button--active .header__menu-line:last-child {
+    transform: rotate(-45deg);
+}
+
+.header__menu-button:not(.header__menu-button--active):hover .header__menu-line:first-child {
+    transform: translateY(-10px) scaleX(0.9);
+}
+
+.header__menu-button:not(.header__menu-button--active):hover .header__menu-line:last-child {
+    transform: translateY(10px) scaleX(0.9);
+}
+
+.header__menu-button--active:hover .header__menu-line:first-child {
+    transform: rotate(45deg) scale(1.12);
+}
+
+.header__menu-button--active:hover .header__menu-line:last-child {
+    transform: rotate(-45deg) scale(1.12);
+}

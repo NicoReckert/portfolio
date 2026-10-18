@@ -98,7 +98,7 @@ export const en = {
         My perseverance, creative thinking and a constant drive to improve my approach help me in this.`
     },
     skills: {
-        title: 'Skills',
+        title: 'My skills',
         highlight: 'Need',
         highlightAccent: 'another technology?',
         text: 'I am always open to learning new technologies and frameworks.',

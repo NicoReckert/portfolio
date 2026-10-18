@@ -1,0 +1,195 @@
+.skills {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 100px;
+    margin-top: 164px;
+}
+
+.skills__grid {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 48px 88px;
+    max-width: 664px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.skills__text {
+    color: white;
+    font-family: 'Poppins-Bold';
+    font-weight: bold;
+}
+
+.skills__item-label {
+    color: white;
+    font-family: 'Poppins-Bold';
+    font-weight: bold;
+}
+
+.skills__item-label--learning {
+    color: var(--primary-2);
+    font-family: 'Poppins-Bold';
+    font-weight: bold;
+    transition: all 120ms ease-in-out;
+}
+
+.skills__content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 100%;
+}
+
+.skills__title {
+    color: white;
+    font-family: 'Poppins-Bold';
+    font-weight: bold;
+    font-size: 90px;
+    line-height: 120%;
+}
+
+.skills__item,
+.skills__item--learning {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 88px;
+    text-align: center;
+}
+
+.skills__item--learning {
+    position: relative;
+}
+
+.skills__item--learning:hover .skills__item-label--learning,
+.skills__item--learning:hover .skills__icon--learning {
+    color: #FFFFFF;
+}
+
+.skills__item--learning:hover .skills__decoration {
+    opacity: 100%;
+}
+
+.skills__decoration {
+    position: absolute;
+    top: -112px;
+    left: -3px;
+    object-fit: cover;
+    opacity: 0;
+    transition: all 120ms ease-in-out;
+    pointer-events: none;
+}
+
+.skills__icon {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.skills__icon--learning {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    color: var(--primary-2);
+    transition: all 120ms ease-in-out;
+}
+
+.skills__item:hover .skills__icon {
+    animation: bounce 600ms ease-in-out;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0)
+    }
+
+    15% {
+        transform: translateY(-12px)
+    }
+
+    40% {
+        transform: translateY(-12px)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
+.skills__line {
+    width: 68px;
+    height: 4px;
+    background-color: var(--primary-2);
+}
+
+.skills__header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 40px;
+}
+
+.skills__body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.skills__text-group {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.skills__highlight {
+    color: white;
+    font-family: 'Poppins-Bold';
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.skills__highlight-accent {
+    color: var(--primary-2);
+    font-family: 'Poppins-Bold';
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.skills__button {
+    color: white;
+    font-family: 'Poppins-Regular';
+    font-weight: 400;
+    font-size: 23px;
+    padding: 15px 30px;
+    background-color: var(--primary-1);
+    border-radius: 10px;
+    text-decoration: none;
+    transform-origin: top right;
+    transition: all 100ms ease-in-out;
+    align-self: flex-end;
+}
+
+.skills__button:hover {
+    transform: scale(1.15);
+    background-color: var(--primary-2);
+}
+
+.skills__button:active {
+    background-color: #FFFFFF;
+    color: var(--primary-1);
+}
